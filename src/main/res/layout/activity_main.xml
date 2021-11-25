@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/localM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本地音乐" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的歌单"
+            android:id="@+id/MyList"/>
+
+
+        <TextView
+            android:id="@+id/zhuangtai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="暂停"
+            android:textSize="20dp"
+            android:layout_gravity="center"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:id="@+id/musicList"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:id="@+id/songName"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:id="@+id/curTime"/>
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:id="@+id/totalTime"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <SeekBar
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/musicSeekBar"/>
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/back"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/backMusic"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/button"
+            android:id="@+id/playMusic"/>
+
+        <ImageButton
+            android:id="@+id/nextMusic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/playnextbg" />
+
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/model"
+        android:layout_gravity="center"
+        android:text="播放模式"/>
+
+</LinearLayout>
